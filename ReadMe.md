@@ -1,15 +1,15 @@
 # MuzzEstate - README
 
 ## Overview
-MuzzEstate is a comprehensive real estate platform designed to facilitate transactions in residential, commercial, land, and warehouse properties. Built using the MERN stack (MongoDB, Express.js, React.js, Node.js), MuzzEstate aims to provide a seamless user experience for buyers, sellers, and agents.
+MuzzEstate is a comprehensive real estate platform designed to facilitate transactions in residential, commercial, land, and warehouse properties. Built using the MERN stack (MongoDB, Express.js, React.js, Node.js), MuzzEstate aims to provide a seamless user experience for buyers, sellers and agents.
 
 ## Features
-- **Property Listings**: Users can browse a wide range of properties categorized as residential, commercial, land, and warehouses.
+- **Property Listings**: Users can browse a wide range of properties categorized as residential, commercial, land and warehouses.
 - **User Authentication**: Secure sign-up and login functionalities for users to manage their profiles and listings.
 - **Payment Integration**: Supports multiple payment methods including Stripe and PayPal, as well as cash transactions.
-- **Property Management**: Administrators can add, update, or delete property listings and manage user accounts.
-- **Search and Filters**: Advanced search capabilities with filters for location, price range, property type, and more.
-- **Responsive Design**: The application is optimized for desktop, tablet, and mobile devices.
+- **Property Management**: Administrators can add, update or delete property listings and manage user accounts.
+- **Search and Filters**: Advanced search capabilities with filters for location, price range, property type and more.
+- **Responsive Design**: The application is optimized for desktop, tablet and mobile devices.
 
 ## Technologies Used
 - **Frontend**: React.js
@@ -22,7 +22,7 @@ To set up the project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/MuzzEstate.git
+   git clone https://github.com/TinasheMuzenda/MuzzEstate.git
    cd MuzzEstate
    ```
 
@@ -43,7 +43,7 @@ To set up the project locally:
    npm run dev
    ```
 
-5. Access the application at `http://localhost:3000`.
+5. Access the application at `http://localhost:7000`.
 
 ## API Endpoints
 ### User Routes
@@ -66,6 +66,6 @@ This project is licensed under the MIT License.
 
 ## Contact
 For any inquiries or support, please contact:
-- Email: support@muzzestate.com
+- Email: tmuzendat@gmail.com
 
 Thank you for using MuzzEstate! We hope you enjoy our platform for all your real estate needs.
