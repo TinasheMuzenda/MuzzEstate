@@ -1,6 +1,3 @@
-Certainly! Here’s the README file for your MuzzEstate project formatted using Markdown:
-
-```markdown
 # MuzzEstate - README
 
 ## Overview
@@ -72,6 +69,3 @@ For any inquiries or support, please contact:
 - Email: support@muzzestate.com
 
 Thank you for using MuzzEstate! We hope you enjoy our platform for all your real estate needs.
-```
-
-Feel free to copy this Markdown text into your README file!
