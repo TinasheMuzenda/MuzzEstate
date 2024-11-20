@@ -1,0 +1,131 @@
+.hideNav {
+  top: -5rem;
+  transition: 0.7s;
+}
+
+nav {
+  background-color: var(--primary-color);
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  transition: 0.7s;
+  z-index: 100;
+
+  .navbar {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    .header {
+      width: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+          h1{
+            font-size: 1.7rem;
+            color: var(--secondary-color);
+          }
+      }
+      .menu {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+        width: 2rem;
+        height: 1.3rem;
+        cursor: pointer;
+
+        span {
+          height: 0.2rem;
+          background-color: var(--main-color);
+          border-radius: 0.2rem;
+        }
+
+        .one {
+          width: 100%;
+        }
+        .two {
+          width: 75%;
+        }
+        .three {
+          width: 50%;
+        }
+      }
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0;
+
+      li {
+        list-style: none;
+
+        a {
+          display: block;
+          text-decoration: none;
+          color: var(--secondary-color);
+          padding: 0.2rem 0.5rem;
+          margin-left: 0.5rem;
+          border-radius: 0.5rem;
+          font-weight: 600;
+        }
+
+        a:not(.active):hover {
+          background-color: #ff550025;
+        }
+
+        .active {
+          color: var(--main-color);
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+@media (max-width: 768px) {
+  nav {
+    .navbar {
+      flex-direction: column;
+      align-items: start;
+
+      .header {
+        width: 100%;
+        .menu {
+          display: flex;
+        }
+      }
+
+      ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+
+        li {
+          width: 100%;
+          text-align: center;
+
+          a {
+            padding: 0.3rem 0.5rem;
+            margin: 0.2rem 0.5rem;
+          }
+        }
+      }
+
+      ul.open {
+        display: flex;
+      }
+    }
+  }
+}

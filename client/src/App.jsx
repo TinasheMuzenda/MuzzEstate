@@ -1,9 +1,10 @@
-import "./styles/App.css"
+import AppRoutes from "./AppRoutes";
+import "./styles/App.css";
 
 const App = () => {
   return (
-    <div className='App'>
-      <h1>APP</h1>
+    <div className="App">
+      <AppRoutes />
     </div>
   );
 };
