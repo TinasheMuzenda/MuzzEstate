@@ -1,58 +1,17 @@
-import "../styles/Header.css";
-import { useState, useEffect, useRef } from "react";
+import "../styles/Navbar.css";
+import { useState, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
-  const [lastScrollTop, setLastScrollTop] = useState(0);
-  const [navbarPosition, setNavbarPosition] = useState(0);
   const [activeTab, setActiveTab] = useState();
   const handleClick = (number) => {
     setActiveTab(number);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
-
-      if (!menuOpen) {
-        if (currentScrollTop > lastScrollTop) {
-          setNavbarPosition(-5);
-        } else {
-          setNavbarPosition(0);
-        }
-      }
-
-      setLastScrollTop(currentScrollTop);
-    };
-
-    const handleClickOutside = (event) => {
-      if (
-        menuOpen &&
-        menuRef.current &&
-        !menuRef.current.contains(event.target)
-      ) {
-        setMenuOpen(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    document.addEventListener("mousedown", handleClickOutside);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [lastScrollTop, menuOpen]);
-
   return (
-    <nav
-      id="navbar"
-      className="mainNav"
-      style={{ top: `${navbarPosition}rem` }}
-    >
+    <nav id="navbar" className="bannerNav">
       <div className="navbar container" ref={menuRef}>
         <div className="header">
           <Link

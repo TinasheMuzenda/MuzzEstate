@@ -16,21 +16,21 @@ span {
 
 a {
   text-decoration: none;
+  color: var(--secondary-color);
 }
 
 p {
   font-weight: 500;
   line-height: 30px;
-  font-size: 20px;
 }
 
-.headings {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 2rem;
-
-  h2 {
-    font-weight: 700;
+.logo {
+  h1 {
+    font-size: 1.7rem;
+    color: var(--secondary-color);
   }
+}
+
+li {
+  list-style: none;
 }

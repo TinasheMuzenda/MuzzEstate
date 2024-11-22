@@ -1,15 +1,6 @@
-.hideNav {
-  top: -5rem;
-  transition: 0.7s;
-}
-
-.mainNav {
-  background-color: var(--primary-color);
-  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
-  position: sticky;
-  top: 0;
-  transition: 0.7s;
-  z-index: 100;
+.bannerNav {
+  margin-top: 1rem;
+  background-color: transparent;
 
   .navbar {
     padding: 1rem 0;
@@ -86,7 +77,7 @@ M E D I A  Q U E R I E S
 ####################################################
 */
 @media (max-width: 768px) {
-  .mainNav {
+  .bannerNav {
     .navbar {
       flex-direction: column;
       align-items: start;

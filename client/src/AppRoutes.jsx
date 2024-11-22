@@ -9,11 +9,13 @@ import NotFound from "./components/NotFound";
 import Profile from "./pages/Profile";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import Navbar from "./components/Navbar";
 
 const AppRoutes = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
