@@ -12,6 +12,7 @@ import SignUp from "./pages/SignUp";
 import Navbar from "./components/Navbar";
 import ContactBanner from "./components/contacts/ContactBanner";
 import ContactInformation from "./components/contacts/ContactInformation";
+import ContactMap from "./components/contacts/ContactMap";
 
 const AppRoutes = () => {
   return (
@@ -19,7 +20,8 @@ const AppRoutes = () => {
       {/* <Header /> */}
       {/* <Navbar /> */}
       {/* <ContactBanner /> */}
-      <ContactInformation />
+      {/* <ContactInformation /> */}
+      <ContactMap />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
