@@ -10,12 +10,14 @@ import Profile from "./pages/Profile";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Navbar from "./components/Navbar";
+import ContactBanner from "./components/contacts/ContactBanner";
 
 const AppRoutes = () => {
   return (
     <div>
       {/* <Header /> */}
-      <Navbar />
+      {/* <Navbar /> */}
+      <ContactBanner />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
