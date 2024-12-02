@@ -11,13 +11,15 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Navbar from "./components/Navbar";
 import ContactBanner from "./components/contacts/ContactBanner";
+import ContactInformation from "./components/contacts/ContactInformation";
 
 const AppRoutes = () => {
   return (
     <div>
       {/* <Header /> */}
       {/* <Navbar /> */}
-      <ContactBanner />
+      {/* <ContactBanner /> */}
+      <ContactInformation />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
