@@ -1,10 +1,18 @@
-import React from "react";
+import ContactBanner from "../components/contacts/ContactBanner";
+import ContactInformation from "../components/contacts/ContactInformation";
+import ContactMap from "../components/contacts/ContactMap";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const Contact = () => {
   return (
-    <div>
-      <h1>Contact</h1>
-    </div>
+    <main>
+      <Header />
+      <ContactBanner />
+      <ContactInformation />
+      <ContactMap />
+      <Footer />
+    </main>
   );
 };
 

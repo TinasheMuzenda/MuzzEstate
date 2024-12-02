@@ -21,7 +21,7 @@ const AppRoutes = () => {
       {/* <Navbar /> */}
       {/* <ContactBanner /> */}
       {/* <ContactInformation /> */}
-      <ContactMap />
+      {/* <ContactMap /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
