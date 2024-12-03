@@ -16,11 +16,12 @@ import ContactMap from "./components/contacts/ContactMap";
 import Footer from "./components/Footer";
 import CreateListing from "./pages/CreateListing";
 import ProtectedRoutes from "./components/utils/ProtectedRoutes";
+import About from "./pages/About";
 
 const AppRoutes = () => {
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       {/* <Navbar /> */}
       {/* <ContactBanner /> */}
       {/* <ContactInformation /> */}
@@ -30,6 +31,7 @@ const AppRoutes = () => {
         <Route path="*" element={<NotFound />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/listings" element={<Listings />} />
+        <Route path="/our-story" element={<About />} />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route element={<ProtectedRoutes />}>
