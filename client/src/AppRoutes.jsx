@@ -13,6 +13,9 @@ import Navbar from "./components/Navbar";
 import ContactBanner from "./components/contacts/ContactBanner";
 import ContactInformation from "./components/contacts/ContactInformation";
 import ContactMap from "./components/contacts/ContactMap";
+import Footer from "./components/Footer";
+import CreateListing from "./pages/CreateListing";
+import ProtectedRoutes from "./components/utils/ProtectedRoutes";
 
 const AppRoutes = () => {
   return (
@@ -25,14 +28,18 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/admin" element={<Admin />} />
-        <Route path="/agent" element={<Agent />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/listings" element={<Listings />} />
-        <Route path="/profile" element={<Profile />} />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
+        <Route element={<ProtectedRoutes />}>
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/create-listing" element={<CreateListing />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/agent" element={<Agent />} />
+        </Route>
       </Routes>
+      <Footer />
     </div>
   );
 };

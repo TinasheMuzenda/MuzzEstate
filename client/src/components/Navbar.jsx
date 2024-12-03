@@ -64,18 +64,6 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="/search"
-              onClick={() => {
-                handleClick(3);
-                setMenuOpen(false);
-              }}
-              className={` ${activeTab == 3 ? "active" : ""} `}
-            >
-              Search
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
               to="/contact"
               onClick={() => {
                 handleClick(4);
