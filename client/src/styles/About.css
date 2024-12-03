@@ -1,0 +1,26 @@
+.story {
+  padding: 3rem 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.61);
+  background-image: url(../assets/aboutResidential.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  color: var(--primary-color);
+
+  .container {
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    .paragraph {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .p1 {
+      margin-bottom: 1rem;
+    }
+  }
+}

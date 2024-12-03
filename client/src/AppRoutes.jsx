@@ -21,7 +21,7 @@ import About from "./pages/About";
 const AppRoutes = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       {/* <Navbar /> */}
       {/* <ContactBanner /> */}
       {/* <ContactInformation /> */}
