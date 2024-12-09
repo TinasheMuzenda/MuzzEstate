@@ -11,7 +11,7 @@ const Footer = () => {
     <footer>
       <div className="container">
         <div className="row">
-          <div className="col-md left">
+          <div className="col-lg left">
             <ul className="footer-links">
               <li>
                 <NavLink
@@ -53,7 +53,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md right">
+          <div className="col-lg right">
             <li>
               <NavLink
                 to="/terms-of-service"

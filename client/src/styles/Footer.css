@@ -171,6 +171,11 @@ M E D I A  Q U E R I E S
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
   footer {
     .removeMobile {
       display: block;
@@ -193,10 +198,6 @@ M E D I A  Q U E R I E S
       }
     }
   }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
